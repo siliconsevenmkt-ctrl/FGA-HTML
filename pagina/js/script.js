@@ -15,7 +15,7 @@ const CONFIG = {
         interval: 8000,
         totalItems: 3
     },
-    pixKey: 'doe@refugiotiare.com'
+    pixKey: 'doe@gritoanimal.fun'
 };
 
 // Estado da aplicação
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initializePIXCopy();
     initializeFixedButton();
     initializeWhatsAppCarousel();
-    console.log('Site do Refúgio da Tia Rê carregado com sucesso!');
+    console.log('Site da Fundação Grito Animal carregado com sucesso!');
 });
 
 // ===== CARREGAMENTO PROGRESSIVO DE IMAGENS =====
@@ -451,7 +451,7 @@ function initializeDonationGoal() {
     // ===== CONFIGURAÇÃO MANUAL - ALTERE AQUI OS VALORES =====
     const goalConfig = {
         targetAmount: 50000,        // Meta total (R$ 50.000)
-        currentAmount: 4670,        // Valor atual arrecadado 
+        currentAmount: 25270,        // Valor atual arrecadado 
 
     };
     
@@ -1204,7 +1204,7 @@ window.addEventListener('unhandledrejection', (e) => {
 window.RefugioTiaReLoaded = true;
 
 // Log de inicialização
-console.log('🐕 Refúgio da Tia Rê - Sistema carregado com sucesso! 🐱');
+console.log('🐕 Fundação Grito Animal - Sistema carregado com sucesso! 🐱');
 console.log('Versão: 1.0.0');
 console.log('Desenvolvido com ❤️ para salvar vidas');
 
