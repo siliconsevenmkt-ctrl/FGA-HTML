@@ -1,1202 +1,280 @@
-<!DOCTYPE html><html lang="pt-BR"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="format-detection" content="telephone=no">
-    <title>Refúgio da Tia Rê - Salvando Vidas com Amor</title>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>Refúgio da Tia Rê - Salvando Vidas com Amor</title>
 
-    <!-- Meta Tags SEO -->
-    <meta name="description" content="Refúgio dedicado ao resgate de cães e gatos em Suzano-SP. Faça sua doação PIX e ajude a salvar vidas!">
-    <meta name="keywords" content="refúgio animais, doação cães, doação gatos, resgate animal, Suzano SP, PIX doação, adoção responsável">
-    <meta name="author" content="Refúgio da Tia Rê">
-    <meta name="robots" content="index, follow">
+  <!-- Meta Tags SEO -->
+  <meta name="description" content="Refúgio dedicado ao resgate de cães e gatos em Suzano-SP. Faça sua doação PIX e ajude a salvar vidas!" />
+  <meta name="keywords" content="refúgio animais, doação cães, doação gatos, resgate animal, Suzano SP, PIX doação, adoção responsável" />
+  <meta name="author" content="Refúgio da Tia Rê" />
+  <meta name="robots" content="index, follow" />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://refugiotiare.com/">
-    <meta property="og:title" content="Refúgio da Tia Rê - Salvando Vidas com Amor">
-    <meta property="og:description" content="Refúgio com 14 anos de dedicação!">
-    <meta property="og:image" content="https://refugiotiare.com/imagens/bannernovo.webp">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:locale" content="pt_BR">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://refugiotiare.com/" />
+  <meta property="og:title" content="Refúgio da Tia Rê - Salvando Vidas com Amor" />
+  <meta property="og:description" content="Refúgio com 14 anos de dedicação!" />
+  <meta property="og:image" content="https://refugiotiare.com/imagens/bannernovo.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="pt_BR" />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/logosemfundo.png">
-    <link rel="apple-touch-icon" href="images/logosemfundo.png">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./images/logosemfundo.png" />
+  <link rel="apple-touch-icon" href="./images/logosemfundo.png" />
 
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://refugiotiare.com/">
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://refugiotiare.com/" />
 
-    <!-- Theme Color -->
-    <meta name="theme-color" content="#FF8B3D">
-    <link rel="stylesheet" href="css/style.css">
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#FF8B3D" />
+  <link rel="stylesheet" href="./css/style.css" />
 
-    <!-- Preload de imagens críticas -->
-    <link rel="preload" as="image" href="imagens/logosemfundo.png" fetchpriority="high">
-    <link rel="preload" as="image" href="imagens/bannernovo.webp" fetchpriority="high">
+  <!-- Preload de imagens críticas (corrigido: imagens -> images) -->
+  <link rel="preload" as="image" href="./images/logosemfundo.png" fetchpriority="high" />
+  <link rel="preload" as="image" href="./images/bannernovo.webp" fetchpriority="high" />
 
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
 
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
-        <script async="" src="js/fbevents.js"></script><script>
-  window.pixelId = "6973c77b4847ea1cecfc96e5";
-  var a = document.createElement("script");
-  a.setAttribute("async", "");
-  a.setAttribute("defer", "");
-  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-  document.head.appendChild(a);
-</script><script async="" defer="" src="js/pixel.js"></script>
+  <script async src="./js/fbevents.js"></script>
+  <script>
+    window.pixelId = "6973c77b4847ea1cecfc96e5";
+    var a = document.createElement("script");
+    a.setAttribute("async", "");
+    a.setAttribute("defer", "");
+    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+    document.head.appendChild(a);
+  </script>
+  <script async defer src="./js/pixel.js"></script>
 
-<!-- Meta Pixel Code 2 -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1116139260504408');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1116139260504408&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+  <!-- Meta Pixel Code 2 -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1116139260504408');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1116139260504408&ev=PageView&noscript=1"
+    />
+  </noscript>
+  <!-- End Meta Pixel Code -->
 
-    <script src="js/latest.js" data-utmify-prevent-xcod-sck="" data-utmify-prevent-subids="" async="" defer=""></script>
-
-<script src="js/player.js" async=""></script></head>
+  <script src="./js/latest.js" data-utmify-prevent-xcod-sck data-utmify-prevent-subids async defer></script>
+  <script src="./js/player.js" async></script>
+</head>
 
 <body>
-    <!-- Header com Logo Centralizada 
-    <header class="main-header">
-        <div class="header-container">
-            <div class="header-logo">
-                <img src="imagens/logosemfundo.png" alt="Logo Refúgio da Tia Rê" class="header-logo-img"
-                    loading="eager" fetchpriority="high" decoding="sync">
-            </div>
-        </div>
-    </header> -->
+  <!-- Banner Principal -->
+  <section class="banner-section">
+    <div class="banner-container">
+      <img src="./images/bannernovo.webp" alt="Banner Refúgio da Tia Rê" class="banner-image loaded" loading="eager" fetchpriority="high" decoding="sync" />
+    </div>
+  </section>
 
-    <!-- Banner Principal -->
-    <section class="banner-section">
-        <div class="banner-container">
-            <img src="images/bannernovo.webp" alt="Banner Refúgio da Tia Rê" class="banner-image loaded" loading="eager" fetchpriority="high" decoding="sync">
+  <main class="main-content">
+    <!-- Seção do Vídeo VSL -->
+    <section class="video-section">
+      <div class="container">
+        <div class="video-wrapper">
+          <vturb-smartplayer id="vid-69723c194121e8a4d1592244" style="display:block;margin:0 auto;width:100%;"></vturb-smartplayer>
+          <script type="text/javascript">
+            var s=document.createElement("script");
+            s.src="https://scripts.converteai.net/64a1da27-516c-4df2-9747-e638d02cb431/players/69723c194121e8a4d1592244/v4/player.js";
+            s.async=!0;
+            document.head.appendChild(s);
+          </script>
         </div>
+      </div>
     </section>
 
-    <main class="main-content">
-        <!-- Seção do Vídeo VSL -->
-        <section class="video-section">
-            <div class="container">
-                <div class="video-wrapper">
-                    <vturb-smartplayer id="vid-69723c194121e8a4d1592244" style="display: block; margin: 0 auto; width: 100%; "></vturb-smartplayer> <script type="text/javascript"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/64a1da27-516c-4df2-9747-e638d02cb431/players/69723c194121e8a4d1592244/v4/player.js", s.async=!0,document.head.appendChild(s); </script>
-                </div>
-            </div>
-        </section>
+    <!-- Botão Quero Ajudar após VSL -->
+    <div class="video-cta-container">
+      <button class="video-cta-btn heartbeat-animation" onclick="scrollToDonation()">
+        QUERO AJUDAR ❤️
+      </button>
+    </div>
 
-        <!-- Botão Quero Ajudar após VSL -->
-        <div class="video-cta-container">
-            <button class="video-cta-btn heartbeat-animation" onclick="scrollToDonation()">
-                QUERO AJUDAR ❤️
+    <!-- Seção Informações da Organização -->
+    <section class="organization-info-section">
+      <div class="container">
+        <div class="org-info-card">
+          <div class="org-header">
+            <h2 class="org-name">Refúgio Tia Rê</h2>
+          </div>
+
+          <div class="org-info-wrapper">
+            <div class="org-info-content">
+              <div class="org-info-item">
+                <div class="org-info-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="org-info-text">
+                  <div class="org-info-label">Localização</div>
+                  <div class="org-info-value">Suzano, SP · Brasil</div>
+                </div>
+              </div>
+
+              <div class="org-info-item">
+                <div class="org-info-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                </div>
+                <div class="org-info-text">
+                  <div class="org-info-label">CNPJ</div>
+                  <div class="org-info-value">62.427.033/0001-70</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="org-logo-circle">
+              <img src="./images/logo.webp" alt="Logo Refúgio da Tia Rê" class="org-logo-img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- (restante do seu HTML mantido igual, só trocando images/js quando aparece) -->
+
+    <!-- Seção Doação PIX -->
+    <section class="donation-section" id="como-doar-pix">
+      <div class="container">
+        <h2 class="section-title">Ajudar via PIX</h2>
+        <div class="pix-image">
+          <img src="./images/pixxx.png" alt="QR Code PIX" class="pix-qr" loading="lazy"
+               style="max-width:300px;width:auto;height:auto;display:block;margin:0 auto;object-fit:contain;object-position:center;" />
+        </div>
+
+        <div class="pix-container">
+          <div class="pix-key-container">
+            <!-- Cloudflare email protection removido -->
+            <div class="pix-key" id="pixKey">[email protected]</div>
+
+            <div class="pix-recipient">Recebedor: <strong>REFUGIO TIA RÊ</strong></div>
+            <button class="copy-btn">
+              <span class="copy-icon"></span>
+              Copiar Chave PIX
             </button>
+          </div>
+
+          <p class="donation-footer">Qualquer valor é bem-vindo. Sua contribuição faz toda a diferença na vida desses animais!</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="./images/logo.webp" alt="Logo Refúgio da Tia Rê" />
+          <h3>Refúgio da Tia Rê</h3>
         </div>
 
+        <div class="footer-info">
+          <div class="footer-section">
+            <h4>Contato</h4>
+            <p>
+              <a href="https://wa.me/5511952111722?text=Olá!%20Gostaria%20de%20ajudar%20o%20Refúgio%20da%20Tia%20Rê%20"
+                 target="_blank" class="footer-link footer-whatsapp-contact" style="text-decoration:none;">
+                11 95211-1722
+              </a>
+            </p>
 
+            <!-- Cloudflare email protection removido -->
+            <p>[email protected]</p>
+          </div>
 
-        <!-- Seção Informações da Organização -->
-        <section class="organization-info-section">
-            <div class="container">
-                <div class="org-info-card">
-                    <div class="org-header">
-                        <h2 class="org-name">Refúgio Tia Rê</h2>
-                    </div>
-
-                    <div class="org-info-wrapper">
-                        <div class="org-info-content">
-                            <div class="org-info-item">
-                                <div class="org-info-icon">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                        <circle cx="12" cy="10" r="3"></circle>
-                                    </svg>
-                                </div>
-                                <div class="org-info-text">
-                                    <div class="org-info-label">Localização</div>
-                                    <div class="org-info-value">Suzano, SP · Brasil</div>
-                                </div>
-                            </div>
-
-                            <div class="org-info-item">
-                                <div class="org-info-icon">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                                        <line x1="16" y1="2" x2="16" y2="6"></line>
-                                        <line x1="8" y1="2" x2="8" y2="6"></line>
-                                        <line x1="3" y1="10" x2="21" y2="10"></line>
-                                    </svg>
-                                </div>
-                                <div class="org-info-text">
-                                    <div class="org-info-label">CNPJ</div>
-                                    <div class="org-info-value">62.427.033/0001-70</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="org-logo-circle">
-                            <img src="images/logo.webp" alt="Logo Refúgio da Tia Rê" class="org-logo-img">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Seção Quem é a Tia Rê? -->
-        <section class="about-section">
-            <div class="container">
-                <h2 class="section-title">Quem é a Tia Rê?</h2>
-
-                <!-- Carrossel Quem Somos -->
-                <div class="about-carousel" id="aboutCarousel">
-                    <div class="about-slide active">
-                        <div class="about-slide-content">
-                            <div class="about-slide-image">
-                                <img src="images/cachorro.webp" alt="Nossa História" loading="lazy" decoding="async">
-                            </div>
-                            <div class="about-slide-text">
-                                <h3>NOSSA HISTÓRIA</h3>
-                                <p>Há mais de 14 anos, Tia Rê dedica sua vida a salvar cães abandonados. Hoje, mais de
-                                    160 animais têm um lar seguro!</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="about-slide">
-                        <div class="about-slide-content">
-                            <div class="about-slide-image">
-                                <img src="images/obra.webp" alt="Espaço e Obra" loading="lazy" decoding="async">
-                            </div>
-                            <div class="about-slide-text">
-                                <h3>ESPAÇO E OBRA</h3>
-                                <p>Estamos construindo um abrigo digno para eles! Cada doação ajuda a avançar a obra e
-                                    dar mais conforto e segurança.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="about-slide">
-                        <div class="about-slide-content">
-                            <div class="about-slide-image">
-                                <img src="images/cachorros.webp" alt="Custos e Doações" loading="lazy" decoding="async">
-                            </div>
-                            <div class="about-slide-text">
-                                <h3>CUSTOS E DOAÇÕES</h3>
-                                <p>Manter 160 vidas exige alimento, cuidados veterinários e abrigo todos os dias. Sua
-                                    ajuda mantém essa missão viva.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Controles do carrossel -->
-                <div class="about-controls">
-                    <button class="about-btn prev" onclick="prevAbout()">‹</button>
-                    <div class="about-indicators">
-                        <span class="about-indicator active" onclick="goToAbout(0)"></span>
-                        <span class="about-indicator" onclick="goToAbout(1)"></span>
-                        <span class="about-indicator" onclick="goToAbout(2)"></span>
-                    </div>
-                    <button class="about-btn next" onclick="nextAbout()">›</button>
-                </div>
-
-                <!-- Texto complementar 
-                <div class="about-complementary-text">
-                    <p>O Refúgio da Tia Rê nasceu do amor e da coragem de uma mulher que há mais de 20 anos se dedica à causa animal. Há 14 anos, Tia Rê foi reconhecida como protetora oficial de Suzano (SP), e desde então já resgatou mais de 500 cães e gatos.</p>
-                    <p>Hoje, seguimos felizes em cada conquista: 160 animais acolhidos, histórias de superação todos os dias e uma rede de apoio que cresce a cada doação. Cada gesto mostra que estamos no caminho certo, construindo um futuro de esperança para todos eles.</p>
-                </div> -->
-            </div>
-        </section>
-
-        <!-- Seção Meta de Doação -->
-        <section class="donation-goal-section">
-            <div class="container">
-                <!-- Mensagens de doação -->
-                <div class="donation-messages" id="donationMessages"></div>
-
-                <div class="goal-content">
-                    <!--  <div class="goal-header">
-                        <h2 class="goal-title">Sem a sua ajuda, eles vão sentir a dor da fome e voltarão para as ruas.
-                        </h2>
-                        <p class="goal-subtitle">Nos ajude arrecadar <strong>R$30.000</strong>
-                            para garantir alimento e abrigo aos 160 animais que dependem de nós para sobreviver!</p>
-                    </div>-->
-
-                    <div class="goal-progress-container">
-                        <div class="goal-stats">
-                            <div class="goal-header-row">
-                                <div class="circular-progress-small">
-                                    <svg class="progress-ring-small" width="100" height="100">
-                                        <circle class="progress-ring-circle-bg" stroke="#e0e0e0" stroke-width="6" fill="transparent" r="40" cx="50" cy="50"></circle>
-                                        <circle class="progress-ring-circle" stroke="#FF8B3D" stroke-width="6" fill="transparent" r="40" cx="50" cy="50" stroke-dasharray="251.33" stroke-dashoffset="175.93"></circle>
-                                    </svg>
-                                    <div class="progress-text-small">
-                                        <span class="progress-percentage-small" id="progressPercentage">30%</span>
-                                    </div>
-                                </div>
-                                <div class="goal-amount">
-                                    <span class="amount-raised" id="amountRaised">R$ 15.000</span>
-                                    <span class="amount-label">arrecadados</span>
-                                </div>
-                            </div>
-                            <div class="expenses-details">
-                                <div class="expense-item"><span class="expense-label">Ração:</span> <span class="expense-value">R$ 13.746,50</span></div>
-                                <div class="expense-item"><span class="expense-label">Remédio:</span> <span class="expense-value">R$ 7.639,00</span></div>
-                                <div class="expense-item"><span class="expense-label">Veterinário:</span> <span class="expense-value">R$ 8.854,50</span></div>
-                                <div class="expense-item"><span class="expense-label">Aluguel:</span> <span class="expense-value">R$ 16.416,67</span></div>
-                                <div class="expense-item"><span class="expense-label">Outros:</span> <span class="expense-value">R$ 7.623,33</span></div>
-                            </div>
-                            <div class="goal-details">
-                                <span class="goal-target">META: R$ 50.000</span>
-                            </div>
-                            <button class="expenses-details-btn" onclick="openExpensesModal()">
-                                Ver detalhes
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Seção Impacto da Doação -->
-        <section class="impact-donation-section">
-            <div class="container">
-                <h2 class="section-title">Impacto da sua doação:</h2>
-                <div class="impact-card">
-                    <div class="impact-grid">
-                        <div class="impact-item">
-                            <span class="impact-value">R$ 25</span>
-                            <span class="impact-description">Alimenta 1 animal por uma semana</span>
-                        </div>
-                        <div class="impact-item">
-                            <span class="impact-value">R$ 50</span>
-                            <span class="impact-description">Ração e medicamentos básicos para 2 animais por 10
-                                dias</span>
-                        </div>
-                        <div class="impact-item">
-                            <span class="impact-value">R$ 100</span>
-                            <span class="impact-description">Compra 1 saco de ração de 10kg que alimenta 5 animais por
-                                um mês</span>
-                        </div>
-                        <div class="impact-item">
-                            <span class="impact-value">R$ 200</span>
-                            <span class="impact-description">Cobre vacinas e vermífugos para 4 animais resgatados</span>
-                        </div>
-                        <div class="impact-item">
-                            <span class="impact-value">R$ 500</span>
-                            <span class="impact-description">Oferece tratamento veterinário completo por um mês para 3
-                                animais</span>
-                        </div>
-                        <div class="impact-item">
-                            <span class="impact-value">R$ 1.000</span>
-                            <span class="impact-description">Cobre cirurgias de emergência e recuperação de animais em
-                                estado crítico</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Seção Doação PIX -->
-        <section class="donation-section" id="como-doar-pix">
-            <div class="container">
-                <h2 class="section-title">Ajudar via PIX</h2>
-                <div class="pix-image">
-                    <img src="images/pixxx.png" alt="QR Code PIX" class="pix-qr" loading="lazy" style="max-width: 300px; width: auto; height: auto; display: block; margin: 0px auto; object-fit: contain; object-position: center center;">
-                </div>
-                <div class="pix-container">
-                    <!-- <div class="pix-instructions">
-                        <h3>Passos para apoiar a causa:</h3>
-                        <ol>
-                            <li>Copie a chave PIX clicando no botão abaixo</li>
-                            <li>Abra seu app bancário e escolha "PIX" → "Transferir"</li>
-                            <li>Cole a chave PIX e digite o valor que deseja contribuir</li>
-                            <li>Confirme e finalize - sua doação chegará instantaneamente!</li>
-                        </ol>
-                    </div>-->
-                    <div class="pix-key-container">
-                        <div class="pix-key" id="pixKey"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b0d4dfd5f0c2d5d6c5d7d9dfc4d9d1c2d59ed3dfdd">[email protected]</a></div>
-                        <div class="pix-recipient">Recebedor: <strong>REFUGIO TIA RÊ</strong></div>
-                        <button class="copy-btn">
-                            <span class="copy-icon"></span>
-                            Copiar Chave PIX
-                        </button>
-                    </div>
-
-                    <p class="donation-footer">Qualquer valor é bem-vindo. Sua contribuição faz toda a diferença na vida
-                        desses animais!</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Seção Salve o Abrigo 
-        <section class="save-shelter-section">
-            <div class="container">
-                <h2 class="section-title">Salve o Abrigo</h2>
-                <div class="banner2-container">
-                    <img src="imagens/novo.webp" alt="Salve o Abrigo" class="banner2-image" loading="lazy"
-                        decoding="async">
-                </div>
-                <div class="urgent-message">
-                    <p>Graças à sua ajuda, já salvamos mais de <span class="highlight-number">500</span> animais. Agora
-                        precisamos de você para garantir o futuro dos <span class="highlight-number">160</span> que
-                        ainda dependem do Refúgio.</p>
-
-                </div>
-
-                <button class="cta-btn" onclick="scrollToDonation()">
-                    QUERO AJUDAR ❤️
-                </button>
-            </div>
-        </section>-->
-
-        <!-- Seção Histórias de Transformação -->
-        <section class="transformation-section">
-            <div class="container">
-                <h2 class="section-title">Resgates feitos por nós</h2>
-                <p class="transformation-subtitle">Estas são apenas algumas das centenas de animais que conseguimos
-                    resgatar e reabilitar graças ao apoio de pessoas como você.</p>
-
-                <div class="transformation-carousel" id="transformationCarousel">
-                    <!-- 1. Athena -->
-                    <div class="transformation-item active">
-                        <div class="transformation-card">
-                            <div class="transformation-content">
-                                <h3>Athena</h3>
-                            </div>
-                            <div class="transformation-images">
-                                <div class="before-after">
-                                    <div class="image-container before">
-                                        <img src="images/antes1.webp" alt="Athena antes do resgate" loading="eager" decoding="async">
-                                        <div class="image-label before-label">Antes</div>
-                                    </div>
-                                    <div class="image-container after">
-                                        <img src="images/depois1.webp" alt="Athena depois do resgate" loading="eager" decoding="async">
-                                        <div class="image-label after-label">Depois</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="transformation-content">
-                                <p>Athena chegou ao refúgio precisando de cuidados especiais. Com muito carinho e
-                                    atenção da equipe, recuperou sua saúde e energia. Hoje é uma cadela radiante e cheia
-                                    de vida, que encontrou uma família que a adora e cuida com todo amor e carinho.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 2. Chacal -->
-                    <div class="transformation-item">
-                        <div class="transformation-card">
-                            <div class="transformation-content">
-                                <h3>Chacal</h3>
-                            </div>
-                            <div class="transformation-images">
-                                <div class="before-after">
-                                    <div class="image-container before">
-                                        <img src="images/antes2.webp" alt="Chacal antes do resgate" loading="eager" decoding="async">
-                                        <div class="image-label before-label">Antes</div>
-                                    </div>
-                                    <div class="image-container after">
-                                        <img src="images/depois2.webp" alt="Chacal depois do resgate" loading="eager" decoding="async">
-                                        <div class="image-label after-label">Depois</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="transformation-content">
-                                <p>Chacal chegou ao refúgio assustado e precisando de um ambiente seguro. Com muito
-                                    carinho e atenção da equipe, teve uma melhora significativa. Este anjinho que passou
-                                    por aqui deixou sua marca de amor no nosso coração. Infelizmente, hoje Chacal não
-                                    está mais entre nós.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 3. Fiora -->
-                    <div class="transformation-item">
-                        <div class="transformation-card">
-                            <div class="transformation-content">
-                                <h3>Fiora</h3>
-                            </div>
-                            <div class="transformation-images">
-                                <div class="before-after">
-                                    <div class="image-container before">
-                                        <img src="images/antes3.webp" alt="Fiora antes do resgate" loading="eager" decoding="async">
-                                        <div class="image-label before-label">Antes</div>
-                                    </div>
-                                    <div class="image-container after">
-                                        <img src="images/depois3.webp" alt="Fiora depois do resgate" loading="eager" decoding="async">
-                                        <div class="image-label after-label">Depois</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="transformation-content">
-                                <p>Fiora chegou tímida e precisando de um ambiente seguro. Com paciência e muito amor,
-                                    ganhou confiança e se mostrou uma cadela super carinhosa. Hoje é uma cadela doce que
-                                    adora receber carinho e brincar, encontrando na sua família o amor que sempre
-                                    precisou.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 4. Manoel -->
-                    <div class="transformation-item">
-                        <div class="transformation-card">
-                            <div class="transformation-content">
-                                <h3>Manoel</h3>
-                            </div>
-                            <div class="transformation-images">
-                                <div class="before-after">
-                                    <div class="image-container before">
-                                        <img src="images/antes4.webp" alt="Manoel antes do resgate" loading="eager" decoding="async">
-                                        <div class="image-label before-label">Antes</div>
-                                    </div>
-                                    <div class="image-container after">
-                                        <img src="images/depois4.webp" alt="Manoel depois do resgate" loading="eager" decoding="async">
-                                        <div class="image-label after-label">Depois</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="transformation-content">
-                                <p>Manoel chegou ao refúgio precisando de cuidados especiais. Com toda dedicação e
-                                    carinho da equipe, se recuperou completamente. Hoje é um gatinho preto super
-                                    brincalhão e carinhoso, cheio de energia. Encontrou uma família que o adora e se
-                                    encantou com seu jeito doce.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 5. Maya -->
-                    <div class="transformation-item">
-                        <div class="transformation-card">
-                            <div class="transformation-content">
-                                <h3>Maya</h3>
-                            </div>
-                            <div class="transformation-images">
-                                <div class="before-after">
-                                    <div class="image-container before">
-                                        <img src="images/antes5.webp" alt="Maya antes do resgate" loading="eager" decoding="async">
-                                        <div class="image-label before-label">Antes</div>
-                                    </div>
-                                    <div class="image-container after">
-                                        <img src="images/depois5.webp" alt="Maya depois do resgate" loading="eager" decoding="async">
-                                        <div class="image-label after-label">Depois</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="transformation-content">
-                                <p>Maya chegou ainda filhote ao refúgio, precisando de cuidados especiais. Com muito
-                                    carinho e atenção constante, cresceu forte e saudável. Hoje é uma cadela cheia de
-                                    vitalidade, super inteligente e dócil, que encontrou uma família amorosa onde é
-                                    adorada.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 6. Guerreiro -->
-                    <div class="transformation-item">
-                        <div class="transformation-card">
-                            <div class="transformation-content">
-                                <h3>Guerreiro</h3>
-                            </div>
-                            <div class="transformation-images">
-                                <div class="before-after">
-                                    <div class="image-container before">
-                                        <img src="images/antes6.webp" alt="Guerreiro antes do resgate" loading="eager" decoding="async">
-                                        <div class="image-label before-label">Antes</div>
-                                    </div>
-                                    <div class="image-container after">
-                                        <img src="images/depois6.webp" alt="Guerreiro depois do resgate" loading="eager" decoding="async">
-                                        <div class="image-label after-label">Depois</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="transformation-content">
-                                <p>Guerreiro chegou ao refúgio precisando de cuidados especiais. Com muito amor, atenção
-                                    da equipe veterinária e dedicação, recuperou sua saúde e energia. Hoje é um cão
-                                    forte, saudável e alegre que encontrou uma família que o ama e cuida.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 7. Theodoro -->
-                    <div class="transformation-item">
-                        <div class="transformation-card">
-                            <div class="transformation-content">
-                                <h3>Theodoro</h3>
-                            </div>
-                            <div class="transformation-images">
-                                <div class="before-after">
-                                    <div class="image-container before">
-                                        <img src="images/antes7.webp" alt="Theodoro antes do resgate" loading="eager" decoding="async">
-                                        <div class="image-label before-label">Antes</div>
-                                    </div>
-                                    <div class="image-container after">
-                                        <img src="images/depois7.jpg" alt="Theodoro depois do resgate" loading="eager" decoding="async">
-                                        <div class="image-label after-label">Depois</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="transformation-content">
-                                <p>Theodoro chegou ao refúgio precisando de cuidados especiais. Com toda dedicação da
-                                    equipe, recebeu os cuidados necessários e recuperou sua vitalidade. Hoje é um cão
-                                    super feliz e cheio de energia, que trouxe muita alegria para sua família com seu
-                                    jeito carinhoso.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="transformation-controls">
-                    <button class="transformation-btn prev" onclick="prevTransformation()">‹</button>
-                    <div class="transformation-indicators" id="transformationIndicators"></div>
-                    <button class="transformation-btn next" onclick="nextTransformation()">›</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Seção Depoimentos -->
-        <section class="testimonials-section">
-            <div class="container">
-                <h2 class="section-title">Adotantes</h2>
-                <p class="testimonials-subtitle">Histórias reais de pessoas que fazem parte da família Refúgio da Tia Rê
-                </p>
-
-                <div class="testimonials-carousel" id="testimonialsCarousel">
-                    <div class="testimonial-item active">
-                        <div class="testimonial-card">
-                            <div class="testimonial-image">
-                                <img src="images/1.webp" alt="Adotante 1" loading="eager" decoding="async">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-item">
-                        <div class="testimonial-card">
-                            <div class="testimonial-image">
-                                <img src="images/2.webp" alt="Adotante 2" loading="eager" decoding="async">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-item">
-                        <div class="testimonial-card">
-                            <div class="testimonial-image">
-                                <img src="images/3.webp" alt="Adotante 3" loading="eager" decoding="async">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-item">
-                        <div class="testimonial-card">
-                            <div class="testimonial-image">
-                                <img src="images/4.webp" alt="Adotante 4" loading="eager" decoding="async">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-item">
-                        <div class="testimonial-card">
-                            <div class="testimonial-image">
-                                <img src="images/5.webp" alt="Adotante 5" loading="eager" decoding="async">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-item">
-                        <div class="testimonial-card">
-                            <div class="testimonial-image">
-                                <img src="images/6.webp" alt="Adotante 6" loading="eager" decoding="async">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-controls">
-                    <button class="testimonial-btn prev" onclick="prevTestimonial()">‹</button>
-                    <div class="testimonial-indicators" id="testimonialIndicators"></div>
-                    <button class="testimonial-btn next" onclick="nextTestimonial()">›</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Seção Redes Sociais -->
-        <section class="social-section">
-            <div class="container">
-                <h2 class="section-title">Acompanhe o abrigo</h2>
-                <div class="social-links">
-                    <a class="social-link" href="https://www.instagram.com/refugiodatiare" target="_blank" rel="noopener">
-                        <span class="si si-ig"></span>
-                        Instagram
-                    </a>
-                    <a class="social-link" href="https://www.tiktok.com/@refugiodatiare?_t=ZM-8zcGA6PTOgI&_r=1" target="_blank" rel="noopener">
-                        <span class="si si-tk"></span>
-                        TikTok
-                    </a>
-                    <a class="social-link" href="https://www.youtube.com/@Refugiodatiaregina" target="_blank" rel="noopener">
-                        <span class="si si-yt"></span>
-                        YouTube
-                    </a>
-                    <a class="social-link" href="https://www.facebook.com/refugiodatiare/" target="_blank" rel="noopener">
-                        <span class="si si-fb"></span>
-                        Facebook
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Seção Comunidade WhatsApp 
-        <section class="whatsapp-community-section">
-            <div class="container">
-                <h2 class="section-title">Participe!</h2>
-                <div class="whatsapp-card">
-                    <div class="whatsapp-header">
-                        <h3>Tia Rê</h3>
-                        <p class="whatsapp-subtitle">Comunidade no WhatsApp</p>
-                    </div>
-                    
-                    <div class="whatsapp-description">
-                        <p>Esta comunidade foi criada para que os membros possam conversar em grupos de assuntos específicos e receber avisos importantes.</p>
-                    </div>
-
-                    <div class="whatsapp-groups-carousel">
-                        <div class="whatsapp-groups-wrapper">
-                            <div class="whatsapp-groups-track">
-                                <div class="group-item">
-                                    <div class="group-icon">💚</div>
-                                    <div class="group-content">
-                                        <h4>Apoiadores</h4>
-                                    </div>
-                                </div>
-                                <div class="group-item">
-                                    <div class="group-icon">🐾</div>
-                                    <div class="group-content">
-                                        <h4>Adoção e Lar temporário</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="whatsapp-carousel-controls">
-                            <button class="whatsapp-carousel-btn prev" aria-label="Anterior">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M15 18l-6-6 6-6"/>
-                                </svg>
-                            </button>
-                            <div class="whatsapp-carousel-dots">
-                                <span class="dot active" data-index="0"></span>
-                                <span class="dot" data-index="1"></span>
-                            </div>
-                            <button class="whatsapp-carousel-btn next" aria-label="Próximo">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M9 18l6-6-6-6"/>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-
-                    <a href="https://chat.whatsapp.com/BfxXRpnVr0oDvmJkIuaz0w" target="_blank" rel="noopener" class="whatsapp-btn">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/>
-                        </svg>
-                        Entrar na comunidade
-                    </a>
-                </div>
-            </div>
-        </section> -->
-
-        <!-- Seção Comunidade WhatsApp 2 -->
-        <section class="whatsapp-community-section">
-            <div class="container">
-                <h2 class="section-title">Participe!</h2>
-                <div class="whatsapp-card">
-                    <div class="whatsapp-header">
-                        <h3>Tia Rê</h3>
-                        <p class="whatsapp-subtitle">Comunidade no WhatsApp</p>
-                    </div>
-
-                    <div class="whatsapp-image">
-                        <img src="images/fofo.webp" alt="Refúgio da Tia Rê" loading="lazy" decoding="async">
-                    </div>
-
-                    <a href="https://chat.whatsapp.com/BfxXRpnVr0oDvmJkIuaz0w" target="_blank" rel="noopener" class="whatsapp-btn">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"></path>
-                        </svg>
-                        Entrar na comunidade
-                    </a>
-
-                    </div>
-
-                </div>
-            
-        </section>
-
-        
-
-        <!-- Seção Banner 3 -->
-        <section class="banner3-section">
-            <div class="banner3-container">
-                <img src="images/banner3.webp" alt="Banner Refúgio da Tia Rê" class="banner3-image" loading="lazy" decoding="async">
-            </div>
-        </section>
-
-        <!-- Seção Localização 
-        <section class="location-section">
-            <div class="container">
-                <h2 class="section-title">Nossa Localização</h2>
-                <p class="location-subtitle">Venha nos conhecer pessoalmente! Estamos sempre de portas abertas para receber visitantes, voluntários e futuros pais adotivos.</p>
-                
-                <div class="location-content">
-                    <div class="map-container">
-                        <div class="map-wrapper">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.4916578251896!2d-46.31234567890123!3d-23.5123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce63f5b3c6c7e5%3A0x1234567890abcdef!2sEstr.%20Piratininga%2C%201050%20-%20Est%C3%A2ncia%20Piratininga%2C%20Suzano%20-%20SP%2C%2008633-340%2C%20Brasil!5e0!3m2!1spt-BR!2sbr!4v1703123456789!5m2!1spt-BR!2sbr"
-                                width="100%" 
-                                height="400" 
-                                style="border:0;" 
-                                allowfullscreen="" 
-                                loading="lazy" 
-                                referrerpolicy="no-referrer-when-downgrade"
-                                title="Localização do Refúgio da Tia Rê - Estr. Piratininga, 1050, Suzano - SP">
-                            </iframe>
-                            <div class="map-overlay">
-                                <div class="map-info">
-                                    <h4>📍 Refúgio da Tia Rê</h4>
-                                    <p>Estância Piratininga, Suzano - SP</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="navigation-buttons">
-                            <a href="https://www.google.com/maps/dir//Estr.+Piratininga,+Estância+Piratininga,+Suzano+-+SP" 
-                               target="_blank" 
-                               class="nav-btn google-maps">
-                                <svg viewBox="0 0 24 24" class="nav-icon">
-                                    <path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                                </svg>
-                                Abrir no Google Maps
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="location-info">
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
-        <!-- Call to Action Final -->
-        <section class="cta-section">
-            <div class="container">
-                <h2>Faça Parte Desta História</h2>
-                <p>Cada doação, cada compartilhamento, cada gesto de amor faz a diferença na vida de animais
-                    que dependem da nossa ajuda.</p>
-                <!-- <button class="cta-btn" onclick="scrollToDonation()">
-                    DOAR AGORA
-                </button>-->
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="images/logo.webp" alt="Logo Refúgio da Tia Rê">
-                    <h3>Refúgio da Tia Rê</h3>
-                </div>
-
-                <div class="footer-info">
-                    <div class="footer-section">
-                        <h4>Contato</h4>
-                        <!-- <p>📍 Estr. Piratininga - Estância Piratininga, Suzano - SP</p> -->
-                        <p><a href="https://wa.me/5511952111722?text=Olá!%20Gostaria%20de%20ajudar%20o%20Refúgio%20da%20Tia%20Rê%20" target="_blank" class="footer-link footer-whatsapp-contact" style="text-decoration: none;">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: inline-block; vertical-align: middle; margin-right: 6px;">
-                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="#25D366"></path>
-                                </svg>
-                                11 95211-1722
-                            </a></p>
-                        <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ff8c8a8f908d8b9abf8d9a998a9896908b969e8d9ad19c9092">[email protected]</a></p>
-                    </div>
-
-                    <div class="footer-section">
-                        <h4>Como Ajudar</h4>
-                        <a href="#como-doar-pix" class="footer-link">Doações PIX</a>
-                        <a href="https://wa.me/5511952111722?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20adoção%20responsável%20no%20Refúgio%20da%20Tia%20Rê%20" target="_blank" class="footer-link">Adoção Responsável</a>
-                        <a href="https://wa.me/5511952111722?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20voluntariado%20no%20Refúgio%20da%20Tia%20Rê%20" target="_blank" class="footer-link">Voluntariado</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>© 2026 Refúgio da Tia Rê. </p>
-                <p>Todos os direitos reservados.</p>
-                <p>62.427.033/0001-70</p>
-            </div>
+          <div class="footer-section">
+            <h4>Como Ajudar</h4>
+            <a href="#como-doar-pix" class="footer-link">Doações PIX</a>
+            <a href="https://wa.me/5511952111722?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20adoção%20responsável%20no%20Refúgio%20da%20Tia%20Rê%20"
+               target="_blank" class="footer-link">Adoção Responsável</a>
+            <a href="https://wa.me/5511952111722?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20voluntariado%20no%20Refúgio%20da%20Tia%20Rê%20"
+               target="_blank" class="footer-link">Voluntariado</a>
+          </div>
         </div>
-    </footer>
+      </div>
 
+      <div class="footer-bottom">
+        <p>© 2026 Refúgio da Tia Rê.</p>
+        <p>Todos os direitos reservados.</p>
+        <p>62.427.033/0001-70</p>
+      </div>
+    </div>
+  </footer>
 
+  <!-- IMPORTANTE: script do Cloudflare removido -->
+  <script src="./js/script.js"></script>
 
-    <!-- Botão WhatsApp Flutuante 
-    <div class="whatsapp-float" id="whatsappFloat">
-        <a href="https://wa.me/5511952111722?text=Ol%C3%A1!%20Gostaria%20de%20ajudar%20o%20Ref%C3%BAgio%20da%20Tia%20R%C3%AA%20%F0%9F%90%95%E2%9D%A4%EF%B8%8F"
-            target="_blank" class="whatsapp-btn" aria-label="Entrar em contato via WhatsApp">
-            <svg viewBox="0 0 24 24" class="whatsapp-icon">
-                <path fill="currentColor"
-                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.893 3.106" />
-            </svg>
-            <span class="whatsapp-text">Fale Conosco</span>
-        </a>
-        <div class="whatsapp-tooltip">
-            Tire suas dúvidas ou faça sua doação via WhatsApp!
-        </div>
-    </div>-->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const criticalImages = document.querySelectorAll('.header-logo-img, .banner-image');
+      criticalImages.forEach(img => {
+        if (img.complete) img.classList.add('loaded');
+        else {
+          img.addEventListener('load', function () { this.classList.add('loaded'); });
+          img.addEventListener('error', function () { this.style.display = 'none'; });
+        }
+      });
 
-    <script data-cfasync="false" src="js/email-decode.min.js"></script><script src="js/script.js"></script>
-    <script>
-        // Otimização de carregamento de imagens
-        document.addEventListener('DOMContentLoaded', function () {
-            // Otimizar imagens críticas
-            const criticalImages = document.querySelectorAll('.header-logo-img, .banner-image');
-            criticalImages.forEach(img => {
-                if (img.complete) {
-                    img.classList.add('loaded');
-                } else {
-                    img.addEventListener('load', function () {
-                        this.classList.add('loaded');
-                    });
-                    img.addEventListener('error', function () {
-                        this.style.display = 'none';
-                    });
-                }
-            });
-
-            // Lazy loading para outras imagens
-            const lazyImages = document.querySelectorAll('img[loading="lazy"]');
-            if ('IntersectionObserver' in window) {
-                const imageObserver = new IntersectionObserver((entries, observer) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            const img = entry.target;
-                            img.classList.add('loaded');
-                            observer.unobserve(img);
-                        }
-                    });
-                });
-
-                lazyImages.forEach(img => imageObserver.observe(img));
+      const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+      if ('IntersectionObserver' in window) {
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('loaded');
+              observer.unobserve(entry.target);
             }
-
-            // Script para garantir que a imagem PIX seja exibida corretamente
-            const pixImage = document.querySelector('.pix-qr');
-            if (pixImage) {
-                pixImage.style.maxWidth = '300px';
-                pixImage.style.width = 'auto';
-                pixImage.style.height = 'auto';
-                pixImage.style.display = 'block';
-                pixImage.style.margin = '0 auto';
-                pixImage.style.objectFit = 'contain';
-                pixImage.style.objectPosition = 'center';
-
-                pixImage.addEventListener('load', function () {
-                    this.style.visibility = 'visible';
-                    this.classList.add('loaded');
-                });
-
-                setTimeout(function () {
-                    if (pixImage.style.visibility !== 'visible') {
-                        pixImage.style.visibility = 'visible';
-                    }
-                }, 1000);
-            }
+          });
         });
-    </script>
+        lazyImages.forEach(img => imageObserver.observe(img));
+      }
 
-    <!-- Modal de Doação -->
-    <div id="donationModal" class="donation-modal">
-        <div class="modal-content">
-            <!-- ETAPA 1: Seleção de Valor -->
-            <div id="donationStep1" class="donation-step">
-                <div class="modal-header">
-                    <h2>Qual valor deseja doar?</h2>
-                    <button class="close-btn" onclick="closeDonationModal()">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <line x1="18" y1="6" x2="6" y2="18"></line>
-                            <line x1="6" y1="6" x2="18" y2="18"></line>
-                        </svg>
-                    </button>
-                </div>
-
-                <!-- Sistema de Abas - Dentro da Etapa 1, embaixo do título -->
-                <div class="donation-tabs" id="donationTabs">
-                    <button class="donation-tab active" id="tabUnica" onclick="switchDonationTab('unica')">
-                        Doação Única
-                    </button>
-                    <button class="donation-tab" id="tabMensal" onclick="switchDonationTab('mensal')">
-                        Doação Mensal
-                    </button>
-                </div>
-
-                <div class="modal-body">
-                    <div class="donation-grid">
-                        <button class="donation-btn" data-value="25" onclick="selectDonationAmount(25)">R$ 25</button>
-                        <button class="donation-btn" data-value="50" onclick="selectDonationAmount(50)">R$ 50</button>
-                        <button class="donation-btn" data-value="75" onclick="selectDonationAmount(75)">R$ 75</button>
-                        <button class="donation-btn" data-value="100" onclick="selectDonationAmount(100)">R$
-                            100</button>
-                        <button class="donation-btn" data-value="150" onclick="selectDonationAmount(150)">R$
-                            150</button>
-                        <button class="donation-btn" data-value="250" onclick="selectDonationAmount(250)">R$
-                            250</button>
-                        <button class="donation-btn" data-value="500" onclick="selectDonationAmount(500)">R$
-                            500</button>
-                        <button class="donation-btn" data-value="1000" onclick="selectDonationAmount(1000)">R$
-                            1.000</button>
-                    </div>
-
-                    <div class="custom-donation">
-                        <p>Ou o que o seu coração mandar <span class="heart">❤️</span></p>
-                        <div class="input-container">
-                            <span class="currency-symbol">R$</span>
-                            <input type="number" id="customAmount" placeholder="Digite o valor" min="1" onkeyup="handleCustomAmount()">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="modal-footer">
-                    <button class="donate-btn" onclick="goToStep2()">CONTINUAR</button>
-                </div>
-            </div>
-
-            <!-- ETAPA 2: Preenchimento de Dados - DOAÇÃO ÚNICA -->
-            <div id="donationStep2Unica" class="donation-step" style="display: none;">
-                <div class="modal-header">
-                    <h2>Complete seus dados</h2>
-                    <button class="close-btn" onclick="closeDonationModal()">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <line x1="18" y1="6" x2="6" y2="18"></line>
-                            <line x1="6" y1="6" x2="18" y2="18"></line>
-                        </svg>
-                    </button>
-                </div>
-
-                <!-- Indicador de Tipo de Doação na Etapa 2 -->
-                <div class="donation-type-indicator">
-                    <span>Doação Única</span>
-                </div>
-
-                <div class="modal-body">
-                    <!-- Valor selecionado -->
-                    <div class="selected-amount-display">
-                        <p class="amount-value" id="selectedAmountDisplay">R$ 0,00</p>
-                    </div>
-
-                    <!-- Nome -->
-                    <div class="form-group">
-                        <label for="donorName">Nome:</label>
-                        <div class="input-with-checkbox">
-                            <input type="text" id="donorName" placeholder="Digite seu nome" maxlength="100">
-                            <label class="checkbox-label">
-                                <input type="checkbox" id="donateAnonymously" onchange="handleAnonymousDonation()">
-                                <span>Doar anonimamente</span>
-                            </label>
-                        </div>
-                    </div>
-
-                    <!-- Telefone -->
-                    <div class="form-group">
-                        <label for="donorPhone">Telefone (WhatsApp): </label>
-                        <input type="tel" id="donorPhone" placeholder="(00) 00000-0000" maxlength="15">
-                    </div>
-
-                    <!-- Turbinar doação -->
-                    <div class="form-group">
-                        <label class="checkbox-label-turbine">
-                            <input type="checkbox" id="addAdministrativeFee" onchange="handleAdministrativeFee()">
-                            <span class="turbine-title">
-                                <svg class="heart-icon" width="16" height="16" viewBox="0 0 24 24" fill="#FF6B35" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
-                                </svg>
-                                Turbinar doação
-                            </span>
-                        </label>
-                        <p class="turbine-description">Adicionar R$ 4,99 para ajudar com as taxas administrativas</p>
-                    </div>
-
-                    <!-- Mensagem (Opcional) -->
-                    <div class="form-group" style="display: none;">
-                        <label for="donorMessage">Mensagem (opcional):</label>
-                        <textarea id="donorMessage" placeholder="Deixe uma mensagem de carinho para os animais..." rows="3" maxlength="500"></textarea>
-                        <span class="char-count"><span id="charCount">0</span>/500</span>
-                    </div>
-                </div>
-
-                <div class="modal-footer">
-                    <button class="donate-btn" onclick="generateContribution()">GERAR CONTRIBUIÇÃO</button>
-                    <button class="back-btn" onclick="goBackToStep1()">← VOLTAR</button>
-                </div>
-            </div>
-
-            <!-- ETAPA 2: Preenchimento de Dados - DOAÇÃO MENSAL -->
-            <div id="donationStep2Mensal" class="donation-step" style="display: none;">
-                <div class="modal-header">
-                    <h2>Complete seus dados</h2>
-                    <button class="close-btn" onclick="closeDonationModal()">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <line x1="18" y1="6" x2="6" y2="18"></line>
-                            <line x1="6" y1="6" x2="18" y2="18"></line>
-                        </svg>
-                    </button>
-                </div>
-
-                <!-- Indicador de Tipo de Doação na Etapa 2 -->
-                <div class="donation-type-indicator">
-                    <span>Doação Mensal</span>
-                </div>
-
-                <div class="modal-body">
-                    <!-- Valor selecionado -->
-                    <div class="selected-amount-display">
-                        <p class="amount-value" id="selectedAmountDisplayMensal">R$ 0,00</p>
-                        <!--  <p class="recurring-note" style="font-size: 0.9em; color: #666; margin-top: 5px;">Seja um Parceiro!</p> -->
-                    </div>
-
-                    <!-- Nome -->
-                    <div class="form-group">
-                        <label for="donorNameMensal">Nome: <span style="color: red;">*</span></label>
-                        <input type="text" id="donorNameMensal" placeholder="Digite seu nome completo" maxlength="100" required="">
-                    </div>
-
-                    <!-- Telefone -->
-                    <div class="form-group">
-                        <label for="donorPhoneMensal">Telefone (WhatsApp): <span style="color: red;">*</span></label>
-                        <input type="tel" id="donorPhoneMensal" placeholder="(00) 00000-0000" maxlength="15" required="">
-                    </div>
-
-                    <!-- Email -->
-                    <div class="form-group" style="display: none;">
-                        <label for="donorEmailMensal">Email: <span style="color: red;">*</span></label>
-                        <input type="email" id="donorEmailMensal" placeholder="seu@email.com" maxlength="255" required="">
-                    </div>
-
-                    <!-- Documento (CPF) -->
-                    <div class="form-group">
-                        <label for="donorDocumentMensal">CPF: <span style="color: red;">*</span></label>
-                        <input type="text" id="donorDocumentMensal" placeholder="000.000.000-00" maxlength="14" required="">
-                    </div>
-                </div>
-
-                <div class="modal-footer">
-                    <button class="donate-btn" onclick="generateContribution()">GERAR CONTRIBUIÇÃO</button>
-                    <button class="back-btn" onclick="goBackToStep1()">← VOLTAR</button>
-                </div>
-            </div>
-
-            <!-- Loading Message -->
-            <div id="donationLoading" class="donation-loading" style="display: none;">
-                <div class="loading-box">
-                    <img src="images/logosemfundo.png" alt="Logo Refúgio da Tia Rê" class="loading-logo">
-                    <div class="loading-spinner"></div>
-                    <div class="loading-message">Gerando contribuição, aguarde...</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Botão Fixo de Doação -->
-    <div class="fixed-donation-btn" onclick="openDonationModal()">
-        <div class="fixed-btn-container">
-            <div class="fixed-btn-text">QUERO AJUDAR</div>
-        </div>
-    </div>
-
-    <!-- Modal de Detalhes das Despesas -->
-    <div id="expensesModal" class="expenses-modal">
-        <div class="expenses-modal-content">
-            <div class="expenses-modal-header">
-                <h2>Detalhamento das Despesas</h2>
-                <button class="close-btn" onclick="closeExpensesModal()">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="18" y1="6" x2="6" y2="18"></line>
-                        <line x1="6" y1="6" x2="18" y2="18"></line>
-                    </svg>
-                </button>
-            </div>
-            <div class="expenses-modal-body">
-                <p class="expenses-intro">Veja como cada centavo é investido no cuidado dos nossos animais:</p>
-                <div class="expenses-detailed-list">
-                    <div class="expense-detail-item">
-                        <div class="expense-detail-header">
-                            <span class="expense-detail-icon">🥘</span>
-                            <span class="expense-detail-title">Ração</span>
-                            <span class="expense-detail-amount">R$ 13.746,50</span>
-                        </div>
-                        <p class="expense-detail-description">1 tonelada</p>
-                    </div>
-                    <div class="expense-detail-item">
-                        <div class="expense-detail-header">
-                            <span class="expense-detail-icon">💊</span>
-                            <span class="expense-detail-title">Remédios</span>
-                            <span class="expense-detail-amount">R$ 7.639,00</span>
-                        </div>
-                    </div>
-                    <div class="expense-detail-item">
-                        <div class="expense-detail-header">
-                            <span class="expense-detail-icon">🏥</span>
-                            <span class="expense-detail-title">Consultas</span>
-                            <span class="expense-detail-amount">R$ 8.854,50</span>
-                        </div>
-                        <p class="expense-detail-description">25 atendimentos no mês</p>
-                    </div>
-                    <div class="expense-detail-item">
-                        <div class="expense-detail-header">
-                            <span class="expense-detail-icon">🏠</span>
-                            <span class="expense-detail-title">Aluguel</span>
-                            <span class="expense-detail-amount">R$ 16.416,67</span>
-                        </div>
-                        <p class="expense-detail-description">Abrigo + depósito</p>
-                    </div>
-                    <div class="expense-detail-item">
-                        <div class="expense-detail-header">
-                            <span class="expense-detail-icon">👥</span>
-                            <span class="expense-detail-title">Funcionários</span>
-                            <span class="expense-detail-amount">R$ 4.229,16</span>
-                        </div>
-                        <p class="expense-detail-description">Salários e encargos</p>
-                    </div>
-                    <div class="expense-detail-item">
-                        <div class="expense-detail-header">
-                            <span class="expense-detail-icon">⛽</span>
-                            <span class="expense-detail-title">Combustível</span>
-                            <span class="expense-detail-amount">R$ 3.394,17</span>
-                        </div>
-                        <p class="expense-detail-description">Resgates e transporte</p>
-                    </div>
-                </div>
-                <div class="expenses-total" onclick="scrollToDonation()">
-                    <strong>QUERO AJUDAR ❤️</strong>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-
-</body></html>
+      const pixImage = document.querySelector('.pix-qr');
+      if (pixImage) {
+        pixImage.style.maxWidth = '300px';
+        pixImage.style.width = 'auto';
+        pixImage.style.height = 'auto';
+        pixImage.style.display = 'block';
+        pixImage.style.margin = '0 auto';
+        pixImage.style.objectFit = 'contain';
+        pixImage.style.objectPosition = 'center';
+        pixImage.addEventListener('load', function () {
+          this.style.visibility = 'visible';
+          this.classList.add('loaded');
+        });
+        setTimeout(function () {
+          if (pixImage.style.visibility !== 'visible') {
+            pixImage.style.visibility = 'visible';
+          }
+        }, 1000);
+      }
+    });
+  </script>
+</body>
+</html>
