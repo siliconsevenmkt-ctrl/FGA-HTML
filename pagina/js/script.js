@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initializePIXCopy();
     initializeFixedButton();
     initializeWhatsAppCarousel();
-    console.log('Site do Refúgio da Tia Rê carregado com sucesso!');
+    console.log('Site da Fundação Grito Animal carregado com sucesso!');
 });
 
 // ===== CARREGAMENTO PROGRESSIVO DE IMAGENS =====
