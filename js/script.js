@@ -30,6 +30,8 @@ async function copyToClipboard(text) {
 // Função para mostrar notificação
 function showNotification() {
     const notification = document.getElementById('copyNotification');
+    if (!notification) return;
+
     notification.classList.add('show');
     
     setTimeout(() => {
@@ -38,72 +40,99 @@ function showNotification() {
 }
 
 // Event listener para o botão de copiar PIX
-document.getElementById('copyPixButton').addEventListener('click', async function(e) {
-    e.preventDefault();
-    
-    const success = await copyToClipboard(PIX_KEY);
-    
-    if (success) {
-        // Mostra notificação visual
-        showNotification();
+const copyPixButton = document.getElementById('copyPixButton');
+if (copyPixButton) {
+    copyPixButton.addEventListener('click', async function(e) {
+        e.preventDefault();
         
-        // Mostra alerta
-        alert('✅ Chave PIX copiada com sucesso!\nCole no seu Banco de preferência para realizar a doação ❤️\n\n' + PIX_KEY);
+        const success = await copyToClipboard(PIX_KEY);
         
-        // Efeito visual no botão
-        this.style.transform = 'scale(0.95)';
-        setTimeout(() => {
-            this.style.transform = '';
-        }, 150);
-    } else {
-        alert('❌ Erro ao copiar a chave PIX.\n\nChave PIX: ' + PIX_KEY + '\n\nPor favor, copie manualmente.');
-    }
-});
+        if (success) {
+            // Mostra notificação visual
+            showNotification();
+            
+            // Mostra alerta
+            alert('✅ Chave PIX copiada com sucesso!\nCole no seu Banco de preferência para realizar a doação ❤️\n\n' + PIX_KEY);
+            
+            // Efeito visual no botão
+            this.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                this.style.transform = '';
+            }, 150);
+        } else {
+            alert('❌ Erro ao copiar a chave PIX.\n\nChave PIX: ' + PIX_KEY + '\n\nPor favor, copie manualmente.');
+        }
+    });
+}
 
 // Animação suave ao carregar a página
 document.addEventListener('DOMContentLoaded', function() {
     // Garante que a notificação comece oculta
     const notification = document.getElementById('copyNotification');
-    notification.classList.remove('show');
+    if (notification) notification.classList.remove('show');
+
+    // ✅ ALTERAÇÃO: Força o texto visível do PIX (camada 1) e permite clicar para copiar
+    const pixKeyTextEl = document.getElementById('pixKeyText');
+    if (pixKeyTextEl) {
+        // garante que o texto exibido seja sempre o PIX_KEY
+        pixKeyTextEl.textContent = PIX_KEY;
+
+        // (opcional) clicar no texto também copia
+        pixKeyTextEl.style.cursor = 'pointer';
+        pixKeyTextEl.title = 'Clique para copiar a chave PIX';
+        pixKeyTextEl.addEventListener('click', async () => {
+            const success = await copyToClipboard(PIX_KEY);
+            if (success) {
+                showNotification();
+                // se quiser manter o alert ao clicar no texto, descomente:
+                // alert('✅ Chave PIX copiada!\n\n' + PIX_KEY);
+            } else {
+                alert('❌ Erro ao copiar a chave PIX.\n\nChave PIX: ' + PIX_KEY + '\n\nPor favor, copie manualmente.');
+            }
+        });
+    }
     
     // Verifica se há imagem, se não, usa um placeholder
     const avatar = document.getElementById('avatar');
-    
-    avatar.onerror = function() {
-        // Se a imagem não carregar, usa um ícone do Font Awesome
-        const profileImage = document.querySelector('.profile-image');
-        profileImage.innerHTML = '<div class="avatar-placeholder"><i class="fas fa-paw"></i></div>';
-        
-        // Adiciona estilo ao placeholder
-        const style = document.createElement('style');
-        style.textContent = `
-            .avatar-placeholder {
-                width: 120px;
-                height: 120px;
-                border-radius: 20px;
-                background: transparent;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin: 0 auto;
-                box-shadow: 0 8px 20px rgba(139, 111, 71, 0.3);
-            }
-            .avatar-placeholder i {
-                font-size: 3rem;
-                color: #8B6F47;
-            }
-            @media (max-width: 480px) {
+    if (avatar) {
+        avatar.onerror = function() {
+            // Se a imagem não carregar, usa um ícone do Font Awesome
+            const profileImage = document.querySelector('.profile-image');
+            if (!profileImage) return;
+
+            profileImage.innerHTML = '<div class="avatar-placeholder"><i class="fas fa-paw"></i></div>';
+            
+            // Adiciona estilo ao placeholder
+            const style = document.createElement('style');
+            style.textContent = `
                 .avatar-placeholder {
-                    width: 100px;
-                    height: 100px;
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 20px;
+                    background: transparent;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 auto;
+                    box-shadow: 0 8px 20px rgba(139, 111, 71, 0.3);
                 }
                 .avatar-placeholder i {
-                    font-size: 2.5rem;
+                    font-size: 3rem;
+                    color: #8B6F47;
                 }
-            }
-        `;
-        document.head.appendChild(style);
-    };
+                @media (max-width: 480px) {
+                    .avatar-placeholder {
+                        width: 100px;
+                        height: 100px;
+                    }
+                    .avatar-placeholder i {
+                        font-size: 2.5rem;
+                    }
+                }
+            `;
+            document.head.appendChild(style);
+        };
+    }
 });
 
 // Scroll suave (caso tenha seções adicionais no futuro)
@@ -173,4 +202,3 @@ document.head.appendChild(rippleStyle);
 console.log('%c🐾 Fundação Grito Animal - Links 🐾', 'color: #8B6F47; font-size: 20px; font-weight: bold;');
 console.log('%cObrigado por visitar nossa página!', 'color: #D4A574; font-size: 14px;');
 console.log('%cAjude os animais doando o valor que vier no seu coração via PIX: ' + PIX_KEY, 'color: #2d3748; font-size: 12px;');
-
