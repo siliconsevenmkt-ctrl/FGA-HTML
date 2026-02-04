@@ -1,0 +1,661 @@
+/* Reset e Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #D4A574 0%, #8B6F47 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Container Principal */
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    padding: 40px 30px;
+    max-width: 480px;
+    width: 100%;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    animation: fadeInUp 0.8s ease-out;
+    position: relative;
+    z-index: 1;
+}
+
+/* Avatar/Logo */
+.profile-image {
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-out 0.2s both;
+}
+
+.profile-image img {
+    width: 180px;
+    height: 180px;
+    border-radius: 25px;
+    object-fit: contain;
+    background: transparent;
+    box-shadow: 0 8px 20px rgba(139, 111, 71, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.profile-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Nome do Perfil */
+.profile-name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 10px;
+    animation: fadeIn 1s ease-out 0.4s both;
+}
+
+/* Bio */
+.bio {
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #718096;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    padding: 0 10px;
+    animation: fadeIn 1s ease-out 0.4s both;
+}
+
+/* Texto acima das redes sociais */
+.social-text {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #2d3748;
+    margin: 15px 0 5px 0;
+    text-align: center;
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-out forwards;
+    animation-delay: 1.3s;
+}
+
+/* Container de Links */
+.links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+/* Container de Redes Sociais - Apenas Ícones */
+.social-icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    padding: 5px 0 10px 0;
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-out forwards;
+    animation-delay: 1.4s;
+}
+
+/* Botões de Redes Sociais - Apenas Ícones */
+.social-icon-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background: #ffffff;
+    border: 2px solid #e2e8f0;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #2d3748;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-icon-button i {
+    transition: transform 0.3s ease;
+}
+
+.social-icon-button:hover {
+    transform: translateY(-4px) scale(1.1);
+    box-shadow: 0 8px 20px rgba(139, 111, 71, 0.3);
+    border-color: #8B6F47;
+}
+
+.social-icon-button:hover i {
+    transform: scale(1.2);
+}
+
+/* Cores específicas das redes sociais nos ícones */
+.social-icon-button[href*="youtube.com"] {
+    color: #ff0000;
+    border-color: rgba(255, 0, 0, 0.2);
+}
+
+.social-icon-button[href*="instagram.com"] {
+    color: #e4405f;
+    border-color: rgba(228, 64, 95, 0.2);
+}
+
+.social-icon-button[href*="tiktok.com"] {
+    color: #000000;
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+.social-icon-button[href*="kwai.com"] {
+    color: #FF6600;
+    border-color: rgba(255, 102, 0, 0.2);
+}
+
+.social-icon-button[href*="facebook.com"] {
+    color: #1877f2;
+    border-color: rgba(24, 119, 242, 0.2);
+}
+
+/* Container WhatsApp */
+.whatsapp-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    padding: 5px 0 10px 0;
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-out forwards;
+    animation-delay: 1.55s;
+}
+
+.whatsapp-button {
+    background: linear-gradient(135deg, #25D366 0%, #20BA5A 100%);
+    color: #ffffff;
+    border: none;
+    box-shadow: 0 6px 18px rgba(37, 211, 102, 0.3);
+    justify-content: flex-start;
+}
+
+/* Botões WhatsApp com texto */
+.whatsapp-text-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background: #ffffff;
+    border: 2px solid rgba(37, 211, 102, 0.2);
+    border-radius: 25px;
+    text-decoration: none;
+    color: #2d3748;
+    font-weight: 500;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.whatsapp-text-button .whatsapp-icon {
+    width: 20px !important;
+    height: 20px !important;
+    fill: #25D366 !important;
+    flex-shrink: 0 !important;
+    display: inline-block !important;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-text-button span {
+    color: #2d3748;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.whatsapp-text-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+    border-color: #25D366;
+    background: #ffffff;
+}
+
+.whatsapp-text-button:hover .whatsapp-icon {
+    fill: #25D366 !important;
+    transform: scale(1.15);
+}
+
+.whatsapp-icon-button {
+    color: #25D366 !important;
+    border-color: rgba(37, 211, 102, 0.2) !important;
+}
+
+.whatsapp-icon-button .whatsapp-icon {
+    width: 24px !important;
+    height: 24px !important;
+    fill: #25D366 !important;
+    flex-shrink: 0 !important;
+    display: inline-block !important;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-icon-button:hover {
+    transform: translateY(-4px) scale(1.1);
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+    border-color: #25D366;
+}
+
+.whatsapp-icon-button:hover .whatsapp-icon {
+    fill: #25D366 !important;
+    transform: scale(1.2);
+}
+
+.whatsapp-button i {
+    color: #ffffff !important;
+    font-size: 1.4rem !important;
+    width: auto !important;
+    min-width: 24px !important;
+    text-align: center !important;
+    transition: transform 0.3s ease;
+    flex-shrink: 0 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    line-height: 1 !important;
+}
+
+.whatsapp-button:hover {
+    background: linear-gradient(135deg, #20BA5A 0%, #25D366 100%);
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+    transform: translateY(-3px);
+    color: #ffffff;
+}
+
+.whatsapp-button:hover i,
+.whatsapp-button:hover .whatsapp-icon {
+    transform: scale(1.15);
+}
+
+/* Botões de Link */
+.link-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 12px 28px;
+    background: #ffffff;
+    border: 2px solid #e2e8f0;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #2d3748;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-out forwards;
+    text-align: center;
+}
+
+/* Animação escalonada para os botões */
+.link-button:nth-of-type(1) { animation-delay: 0.8s; }
+.link-button:nth-of-type(2) { animation-delay: 0.95s; }
+.pix-key-display { animation-delay: 1.1s; }
+.copy-pix-button { animation-delay: 1.25s; }
+
+.link-button i {
+    font-size: 1.4rem;
+    width: 24px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.link-button .button-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-button i {
+    width: auto !important;
+    min-width: 24px !important;
+}
+
+/* Botão Ajude a Vó Áurea com cor principal */
+.link-button.help-button {
+    background: linear-gradient(135deg, #8B6F47 0%, #D4A574 100%);
+    border-color: #8B6F47;
+    color: #ffffff;
+}
+
+.link-button:hover:not(.whatsapp-button):not(.help-button) {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(139, 111, 71, 0.2);
+    border-color: #8B6F47;
+    background: linear-gradient(135deg, #8B6F47 0%, #D4A574 100%);
+    color: #ffffff;
+}
+
+.link-button.help-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(139, 111, 71, 0.3);
+    opacity: 0.95;
+}
+
+.link-button:hover i,
+.link-button:hover .button-logo {
+    transform: scale(1.15);
+}
+
+.link-button:active {
+    transform: translateY(-1px);
+}
+
+/* Display da chave PIX */
+.pix-key-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 18px 24px;
+    background: #ffffff;
+    border: 2px solid #e2e8f0;
+    border-radius: 25px;
+    color: #2d3748;
+    font-weight: 500;
+    font-size: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    cursor: default;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-out forwards;
+    animation-delay: 2s;
+}
+
+.pix-key-display i {
+    font-size: 1.4rem;
+    width: 24px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.pix-key-display span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    letter-spacing: 0.3px;
+    color: #2d3748;
+    font-weight: 500;
+}
+
+/* Botão para copiar PIX */
+.copy-pix-button {
+    background: linear-gradient(135deg, #4CAF50 0%, #45A049 100%);
+    color: #ffffff;
+    border: none;
+    font-weight: 600;
+    box-shadow: 0 6px 18px rgba(76, 175, 80, 0.3);
+    justify-content: center;
+    border-radius: 25px;
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-out forwards;
+    animation-delay: 2.15s;
+}
+
+.copy-pix-button i {
+    color: #ffffff !important;
+    font-size: 1.4rem;
+    width: 24px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.copy-pix-button:hover {
+    background: linear-gradient(135deg, #45A049 0%, #4CAF50 100%);
+    box-shadow: 0 10px 25px rgba(76, 175, 80, 0.4);
+}
+
+/* Cores específicas das redes sociais */
+.link-button[href*="youtube.com"] i,
+.link-button[href="#"] i {
+    color: #ff0000;
+}
+
+.link-button[href*="instagram.com"] i {
+    color: #e4405f;
+}
+
+.link-button[href*="tiktok.com"] i {
+    color: #000000;
+}
+
+.link-button[href*="facebook.com"] i {
+    color: #1877f2;
+}
+
+.link-button[href*="wa.me"]:not(.whatsapp-button) i {
+    color: #25D366;
+}
+
+.whatsapp-button i,
+.whatsapp-button i.fa-brands,
+.whatsapp-button i.fab,
+.whatsapp-button i.fa-whatsapp,
+a.whatsapp-button i.fa-brands.fa-whatsapp,
+a.whatsapp-button i.fab.fa-whatsapp {
+    color: #ffffff !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: auto !important;
+    min-width: 24px !important;
+}
+
+
+.link-button[href*="instituicaosalvecao.org"] i {
+    color: #8B6F47;
+}
+
+.link-button[href*="kwai.com"] i {
+    color: #FF6600;
+}
+
+/* Efeito hover mantém as cores originais */
+.link-button:hover:not(.whatsapp-button) i {
+    color: inherit;
+}
+
+.whatsapp-button:hover i {
+    color: #ffffff !important;
+}
+
+/* Notificação de Cópia */
+.copy-notification {
+    position: fixed;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #4CAF50 0%, #45A049 100%);
+    color: white;
+    padding: 16px 32px;
+    border-radius: 50px;
+    box-shadow: 0 8px 20px rgba(76, 175, 80, 0.4);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    z-index: 1000;
+    transition: bottom 0.4s ease, opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.copy-notification.show {
+    bottom: 30px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.copy-notification i {
+    font-size: 1.2rem;
+}
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.85rem;
+    margin-top: 10px;
+    padding: 10px;
+    animation: fadeIn 1.5s ease-out 1.8s both;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer-small {
+    font-size: 0.75rem;
+    opacity: 0.8;
+    margin-top: 5px;
+}
+
+.footer i {
+    color: #8B6F47;
+    animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .container {
+        padding: 30px 20px;
+        border-radius: 25px;
+    }
+
+    .profile-name {
+        font-size: 1.75rem;
+    }
+
+    .bio {
+        font-size: 0.9rem;
+    }
+
+    .link-button {
+        padding: 16px 24px;
+        font-size: 0.95rem;
+        gap: 12px;
+        border-radius: 20px;
+    }
+    
+    .link-button i {
+        font-size: 1.3rem;
+        width: 22px;
+    }
+
+    .social-icon-button {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+
+    .profile-image img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 360px) {
+    .container {
+        padding: 25px 15px;
+    }
+
+    .profile-name {
+        font-size: 1.5rem;
+    }
+
+    .link-button {
+        padding: 14px 20px;
+        font-size: 0.9rem;
+        gap: 10px;
+        border-radius: 20px;
+    }
+
+    .link-button i {
+        font-size: 1.2rem;
+        width: 20px;
+    }
+
+    .social-icon-button {
+        width: 48px;
+        height: 48px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Animação de entrada suave para toda a página */
+@keyframes pageLoad {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: pageLoad 0.5s ease-out;
+}
+
