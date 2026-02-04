@@ -451,7 +451,7 @@ function initializeDonationGoal() {
     // ===== CONFIGURAÇÃO MANUAL - ALTERE AQUI OS VALORES =====
     const goalConfig = {
         targetAmount: 50000,        // Meta total (R$ 50.000)
-        currentAmount: 4670,        // Valor atual arrecadado 
+        currentAmount: 25279,        // Valor atual arrecadado 
 
     };
     
