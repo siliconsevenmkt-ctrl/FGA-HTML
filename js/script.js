@@ -1,5 +1,5 @@
 // Configurações
-const PIX_KEY = 'doar.voaurea@salvecao.com';
+const PIX_KEY = 'doe@gritoanimal.fun';
 
 // Função para copiar texto para o clipboard
 async function copyToClipboard(text) {
@@ -48,7 +48,7 @@ document.getElementById('copyPixButton').addEventListener('click', async functio
         showNotification();
         
         // Mostra alerta
-        alert('✅ Chave PIX copiada com sucesso!\n\n' + PIX_KEY);
+        alert('✅ Chave PIX copiada com sucesso!\nCole no seu Banco de preferência para realizar a doação ❤️\n\n' + PIX_KEY);
         
         // Efeito visual no botão
         this.style.transform = 'scale(0.95)';
@@ -170,7 +170,7 @@ rippleStyle.textContent = `
 document.head.appendChild(rippleStyle);
 
 // Log de boas-vindas no console
-console.log('%c🐾 Abrigo Vó Áurea - Links 🐾', 'color: #8B6F47; font-size: 20px; font-weight: bold;');
+console.log('%c🐾 Fundação Grito Animal - Links 🐾', 'color: #8B6F47; font-size: 20px; font-weight: bold;');
 console.log('%cObrigado por visitar nossa página!', 'color: #D4A574; font-size: 14px;');
-console.log('%cAjude os animais doando via PIX: ' + PIX_KEY, 'color: #2d3748; font-size: 12px;');
+console.log('%cAjude os animais doando o valor que vier no seu coração via PIX: ' + PIX_KEY, 'color: #2d3748; font-size: 12px;');
 
