@@ -962,7 +962,7 @@ function showCopySuccess(button) {
     
     // Mostra alert informativo
     setTimeout(() => {
-        alert('✅ Chave PIX copiada com sucesso!\nCole no seu Banco de preferência para realizar a doação ❤️ \n\nSr. Kelvin de Jesus, Administrador Financeiro da Fundação.'));
+        alert('✅ Chave PIX copiada com sucesso!\nCole no seu Banco de preferência para realizar a doação ❤️ \n\nDr. Kelvin de Jesus, Administrador Financeiro da Fundação.');
     }, 500);
     
     // Volta ao estado original após 3 segundos
