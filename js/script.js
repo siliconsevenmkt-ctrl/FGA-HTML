@@ -52,9 +52,7 @@ if (copyPixButton) {
             showNotification();
             
             // Mostra alerta
-            alert('✅ Chave PIX copiada com sucesso!\nCole no seu Banco de preferência para realizar a doação ❤️\n\n' + PIX_KEY
-                 
-                  Sr. Kelvin de Jesus, Administrador Financeiro da Fundação.);
+            alert('✅ Chave PIX copiada com sucesso!\nCole no seu Banco de preferência para realizar a doação ❤️\n\n' + PIX_KEY \n\n' + Sr. Kelvin de Jesus, Administrador Financeiro da Fundação.);
             
             // Efeito visual no botão
             this.style.transform = 'scale(0.95)';
