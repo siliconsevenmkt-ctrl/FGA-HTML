@@ -1,5 +1,5 @@
 // Configurações
-const PIX_KEY = 'Doe Qualquer Valor...';
+const PIX_KEY = 'DOE QUALQUER VALOR...';
 
 // Função para copiar texto para o clipboard
 async function copyToClipboard(text) {
