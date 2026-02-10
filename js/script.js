@@ -1,5 +1,5 @@
 // Configurações
-const PIX_KEY = 'doe@gritoanimal.fun';
+const PIX_KEY = 'doe@gritoanimal.fun..';
 
 // Função para copiar texto para o clipboard
 async function copyToClipboard(text) {
