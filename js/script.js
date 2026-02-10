@@ -39,35 +39,36 @@ function showNotification() {
     }, 3000);
 }
 
+
 // Event listener para o botão de copiar PIX
-const copyPixButton = document.getElementById('copyPixButton');
-if (copyPixButton) {
-    copyPixButton.addEventListener('click', async function(e) {
-        e.preventDefault();
+//const copyPixButton = document.getElementById('copyPixButton');
+//if (copyPixButton) {
+  //  copyPixButton.addEventListener('click', async function(e) {
+    //    e.preventDefault();
         
-        const success = await copyToClipboard(PIX_KEY);
+      //  const success = await copyToClipboard(PIX_KEY);
         
-        if (success) {
+       // if (success) {
             // Mostra notificação visual
-            showNotification();
+         //   showNotification();
             
             // Mostra alerta
-            alert('✅ Chave PIX copiada com sucesso!\nCole no seu Banco de preferência para realizar a doação ❤️\n\n' + PIX_KEY + '\n\nDr. Kelvin de Jesus, Administrador Financeiro da Fundação.');
+           // alert('✅ Chave PIX copiada com sucesso!\nCole no seu Banco de preferência para realizar a doação ❤️\n\n' + PIX_KEY + '\n\nDr. Kelvin de Jesus, Administrador Financeiro da Fundação.');
             
             // Efeito visual no botão
-            this.style.transform = 'scale(0.95)';
-            setTimeout(() => {
-                this.style.transform = '';
-            }, 150);
-        } else {
-            alert('❌ Erro ao copiar a chave PIX.\n\nChave PIX: ' + PIX_KEY + '\n\nPor favor, copie manualmente.');
-        }
-    });
-}
+           // this.style.transform = 'scale(0.95)';
+           // setTimeout(() => {
+             //   this.style.transform = '';
+          //  }, 150);
+      //  } else {
+        //    alert('❌ Erro ao copiar a chave PIX.\n\nChave PIX: ' + PIX_KEY + '\n\nPor favor, copie manualmente.');
+       // }
+   // });
+// }
 
 
 // ✅ NOVO: Botão 3 agora redireciona para uma página de terceiros (mantendo o mesmo layout)
-const THIRD_PARTY_URL = 'COLE_AQUI_A_URL_DE_TERCEIROS';
+const THIRD_PARTY_URL = 'https://livepix.gg/fga';
 
 const copyPixButton = document.getElementById('copyPixButton');
 if (copyPixButton) {
@@ -84,8 +85,6 @@ if (copyPixButton) {
     window.open(THIRD_PARTY_URL, '_blank', 'noopener,noreferrer');
   });
 }
-
-
 
 
 
