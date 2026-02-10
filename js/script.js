@@ -65,6 +65,31 @@ if (copyPixButton) {
     });
 }
 
+
+// ✅ NOVO: Botão 3 agora redireciona para uma página de terceiros (mantendo o mesmo layout)
+const THIRD_PARTY_URL = 'COLE_AQUI_A_URL_DE_TERCEIROS';
+
+const copyPixButton = document.getElementById('copyPixButton');
+if (copyPixButton) {
+  copyPixButton.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    // (Opcional) efeito visual rápido no clique, mantendo seu estilo
+    this.style.transform = 'scale(0.98)';
+    setTimeout(() => {
+      this.style.transform = '';
+    }, 150);
+
+    // Abre igual ao botão 1 (nova aba)
+    window.open(THIRD_PARTY_URL, '_blank', 'noopener,noreferrer');
+  });
+}
+
+
+
+
+
+
 // Animação suave ao carregar a página
 document.addEventListener('DOMContentLoaded', function() {
     // Garante que a notificação comece oculta
