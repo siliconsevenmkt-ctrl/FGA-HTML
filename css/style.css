@@ -475,7 +475,7 @@ a.whatsapp-button i.fab.fa-whatsapp {
 }
 
 
-.link-button[href*="instituicaosalvecao.org"] i {
+.link-button[href*="gritoanimal.fun"] i {
     color: #8B6F47;
 }
 
@@ -658,4 +658,5 @@ a.whatsapp-button i.fab.fa-whatsapp {
 body {
     animation: pageLoad 0.5s ease-out;
 }
+
 
