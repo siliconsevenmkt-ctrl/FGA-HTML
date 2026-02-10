@@ -1,31 +1,31 @@
 // Configurações
 const PIX_KEY = 'DOE QUALQUER VALOR...';
 
-// Função para copiar texto para o clipboard
-// async function copyToClipboard(text) {
-   // try {
-     //   await navigator.clipboard.writeText(text);
-       // return true;
-   // } catch (err) {
-        // Fallback para navegadores mais antigos
-     //   const textArea = document.createElement('textarea');
-       / textArea.value = text;
-       // textArea.style.position = 'fixed';
-       // textArea.style.left = '-999999px';
-       // document.body.appendChild(textArea);
-       // textArea.focus();
-       // textArea.select();
+ Função para copiar texto para o clipboard
+ async function copyToClipboard(text) {
+    try {
+        await navigator.clipboard.writeText(text);
+        return true;
+    } catch (err) {
+         Fallback para navegadores mais antigos
+      const textArea = document.createElement('textarea');
+        textArea.value = ;
+        textArea.style.position = 'fixed';
+        textArea.style.left = '-999999px';
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
         
-      //  try {
-        //    document.execCommand('copy');
-          //  document.body.removeChild(textArea);
-           // return true;
-      //  } catch (err) {
-        //    document.body.removeChild(textArea);
-          //  return false;
-       // }
-   // }
-//}
+       try {
+           document.execCommand('copy');
+            document.body.removeChild(textArea);
+            return true;
+           } catch (err) {
+            document.body.removeChild(textArea);
+            return false;
+        }
+    }
+}
 
 // Função para mostrar notificação
 function showNotification() {
