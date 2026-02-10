@@ -9,7 +9,7 @@ const PIX_KEY = 'DOE QUALQUER VALOR...';
     } catch (err) {
          Fallback para navegadores mais antigos
       const textArea = document.createElement('textarea');
-        textArea.value = ;
+        textArea.value = text;
         textArea.style.position = 'fixed';
         textArea.style.left = '-999999px';
         document.body.appendChild(textArea);
